@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "99213ef7-1922-4d3e-b47c-f79c5b28d59f",
+		"name": "Customer Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PostCustomer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"name\":\"Aravind\",\n\t\"address\": {\n    \t\"street\":\"700 Ridge blvd\",\n    \t\"city\":\"Irving\",\n    \t\"state\":\"Tx\",\n    \t\"zip\":\"75036\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8091/customer/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"customer",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCustomer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8091/customer/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"customer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2469c4ec-81ae-4111-86d1-a145bd390f57",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "598622e7-2c65-45f3-9eda-78d3ca4c6135",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
