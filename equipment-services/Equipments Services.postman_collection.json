@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "66ef54e0-3984-40ac-a101-21315c528253",
+		"name": "Equipments Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PostEquipment1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"name\":\"Modem\",\n\t\"customerID\":\"1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8092/equipments/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"equipments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostEquipment2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":2,\n\t\"name\":\"Router\",\n\t\"customerID\":\"1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8092/equipments/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"equipments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEquipments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8092/equipments/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"equipments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEquipmentsOnly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8092/equipmentsOnly/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"equipmentsOnly",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "739bc792-da7c-4845-b941-4d95e89fb6b7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "39eb13c0-cb43-4740-a75c-d5dc6d2cc77a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
